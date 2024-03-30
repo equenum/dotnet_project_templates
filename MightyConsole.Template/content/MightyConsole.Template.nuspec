@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>MightyConsole.Template</id>
+		<title>Mighty Console App Template</title>
+        <version></version>
+        <description></description>
+        <authors>Egor Quenum</authors>
+		<owners>Egor Quenum</owners>
+		<licenseUrl>https://github.com/equenum/dotnet_project_templates/blob/main/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/equenum/dotnet_project_templates</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<summary></summary>
+		<tags></tags>
+		<packageTypes>
+			<packageType name="Template" />
+		</packageTypes>
+    </metadata>
+</package>
