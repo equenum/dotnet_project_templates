@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Egor Quenum",
+  "description": "",
+  "classifications": ["Console"], // add more?
+  "preferNameDirectory": true, // consider removing later
+  "identity": "MightyConsole.Template",
+  "name": "",
+  "shortName": "mighty-console", // what shows up in dotnet cli console
+  "sourceName": "MightyConsole.Template",
+  "primaryOutputs": [
+    {
+      "path": "MightyConsole.Template/MightyConsole.Template.sln"
+    }
+  ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {}
+}
