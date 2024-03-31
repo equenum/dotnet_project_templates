@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace MightyConsole.Template;
@@ -7,19 +8,25 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        // todo set custom console name
-        Console.Title = "MightyConsole.Template";
+        var host = CreateHostBuilder(args).Build();
+        Configure(host); 
 
-        // todo create and run the builder
-        var builder = CreateHostBuilder(args);
+        var appRunner = ActivatorUtilities.CreateInstance<AppRunner>(host.Services);
+        appRunner.Run(args);
     }
 
     private static IHostBuilder CreateHostBuilder(string[] args) => 
         Host.CreateDefaultBuilder(args)
+            .UseConsoleLifetime()
             .ConfigureServices((context, services) => 
             {
-                // Configure DoC services here
+                // configure DI services here
+                services.AddTransient<AppRunner>();
             });
+
+    private static void Configure(IHost host) 
+    {
+        // use IHost to retrieve appsettings.json configs
+        Console.Title = "MightyConsole.Template";
+    }
 }
-
-
