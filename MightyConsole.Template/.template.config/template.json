@@ -30,7 +30,7 @@
       "modifiers": [
         {
           "condition": "(!add-appsettings)",
-          "exclude": ["MightyConsole.Template/appsettings.json", "MightyConsole.Template/appsettings.Development.json"]
+          "exclude": ["appsettings.json", "appsettings.Development.json"]
         },
         {
           "condition": "(!add-sln)",
