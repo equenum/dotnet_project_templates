@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageType>Template</PackageType>
+		<IsPackable>true</IsPackable>
+		<Version></Version>
+		<PackageId></PackageId>
+		<PackageCopyright></PackageCopyright>
+		<Title></Title>
+		<Authors>Egor Quenum</Authors>
+		<Description></Description>
+		<PackageTags>template;console;</PackageTags>
+		<PackageProjectUrl></PackageProjectUrl>
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>Content</ContentTargetFolders>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+		<NoWarn></NoWarn>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="Content\**" Exclude="**\.vs\**;**\bin\**;**\obj\**;**\*.user;**\*.lock.json;**\node_modules\**;**\.vscode\**;**\wwwroot\**;**\MSBuild_Logs\**" />
+		<Compile Remove="**\*" />
+		<Compile Remove="MSBuild_Logs\**" />
+		<EmbeddedResource Remove="MSBuild_Logs\**" />
+		<None Remove="**\bin\**;**\obj\**;**\MSBuild_Logs\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>
