@@ -17,7 +17,6 @@ internal class Program
 
     private static IHostBuilder CreateHostBuilder(string[] args) => 
         Host.CreateDefaultBuilder(args)
-            .UseConsoleLifetime()
             .ConfigureServices((context, services) => 
             {
                 // configure DI services here
@@ -26,7 +25,10 @@ internal class Program
 
     private static void Configure(IHost host) 
     {
-        // use IHost to retrieve appsettings.json configs
+        // https://learn.microsoft.com/en-us/dotnet/api/system.console?view=net-8.0
+        // use IHost to integrate appsettings.json configs
         Console.Title = "MightyConsole.Template";
+        // Console.BackgroundColor = ConsoleColor.Blue;
+        // Console.ForegroundColor = ConsoleColor.White;
     }
 }

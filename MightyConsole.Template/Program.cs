@@ -17,7 +17,6 @@ internal class Program
 
     private static IHostBuilder CreateHostBuilder(string[] args) => 
         Host.CreateDefaultBuilder(args)
-            .UseConsoleLifetime()
             .ConfigureServices((context, services) => 
             {
                 // configure DI services here
