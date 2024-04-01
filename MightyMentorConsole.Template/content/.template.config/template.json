@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Egor Quenum",
+  "classifications": ["Common", "Console"],
+  "preferNameDirectory": true,
+  "identity": "",
+  "name": "",
+  "shortName": "",
+  "sourceName": "",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "add-appsettings": {
+      "type": "parameter",
+      "description": "Adds appsettings.json and appsettings.Development.json.",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "add-sln": {
+      "type": "parameter",
+      "description": "Adds a solution.",
+      "dataType": "bool",
+      "defaultValue": "false"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!add-appsettings)",
+          "exclude": ["/appsettings.json", "/appsettings.Development.json"]
+        },
+        {
+          "condition": "(!add-sln)",
+          "exclude": [""]
+        }
+      ]
+    }
+  ]
+}
