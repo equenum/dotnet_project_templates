@@ -23,6 +23,12 @@
       "description": "Adds a solution.",
       "dataType": "bool",
       "defaultValue": "false"
+    },
+    "include-utils": {
+      "type": "parameter",
+      "description": "Includes template utility classes.",
+      "dataType": "bool",
+      "defaultValue": "true"
     }
   },
   "sources": [
@@ -30,11 +36,18 @@
       "modifiers": [
         {
           "condition": "(!add-appsettings)",
-          "exclude": ["/appsettings.json", "/appsettings.Development.json"]
+          "exclude": [
+            "MightyMentorConsole.Template/appsettings.json",
+            "MightyMentorConsole.Template/appsettings.Development.json"
+          ]
         },
         {
           "condition": "(!add-sln)",
-          "exclude": [""]
+          "exclude": ["MightyMentorConsole.Template.sln"]
+        },
+        {
+          "condition": "(!include-utils)",
+          "exclude": ["MightyMentorConsole.Template/Utilities/*"]
         }
       ]
     }
