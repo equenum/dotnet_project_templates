@@ -13,7 +13,9 @@ internal static class ConsoleHelper
 
         while (string.IsNullOrWhiteSpace(input) || !TryParse<T>(input, out result))
         {
-            ColorConsole.Write(errorMessage ?? "Invalid input! Please try again: ", ConsoleColor.Red);
+            ColorConsole.Write(errorMessage ?? "Invalid input! Please try again: ",
+                ConsoleColor.Red);
+
             input = ColorConsole.ReadLine().Trim();
         }
         
