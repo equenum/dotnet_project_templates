@@ -12,21 +12,24 @@
     "type": "project"
   },
   "symbols": {
-    "add-appsettings": {
+    "IncludeAppsettings": {
       "type": "parameter",
-      "description": "Adds appsettings.json and appsettings.Development.json.",
+      "displayName": "Include application settings",
+      "description": "Includes appsettings.json and appsettings.Development.json.",
       "datatype": "bool",
       "defaultValue": "true"
     },
-    "add-sln": {
+    "IncludeSln": {
       "type": "parameter",
-      "description": "Adds a solution.",
+      "displayName": "Include solution",
+      "description": "Includes a solution file.",
       "dataType": "bool",
       "defaultValue": "false"
     },
-    "include-utils": {
+    "IncludeUtils": {
       "type": "parameter",
-      "description": "Includes template utility classes.",
+      "displayName": "Include project utilities",
+      "description": "Includes template specific utility classes.",
       "dataType": "bool",
       "defaultValue": "true"
     }
@@ -35,18 +38,18 @@
     {
       "modifiers": [
         {
-          "condition": "(!add-appsettings)",
+          "condition": "(!IncludeAppsettings)",
           "exclude": [
             "MightyMentorConsole.Template/appsettings.json",
             "MightyMentorConsole.Template/appsettings.Development.json"
           ]
         },
         {
-          "condition": "(!add-sln)",
+          "condition": "(!IncludeSln)",
           "exclude": ["MightyMentorConsole.Template.sln"]
         },
         {
-          "condition": "(!include-utils)",
+          "condition": "(!IncludeUtils)",
           "exclude": ["MightyMentorConsole.Template/Utilities/*"]
         }
       ]
