@@ -4,14 +4,14 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageType>Template</PackageType>
 		<IsPackable>true</IsPackable>
-		<Version></Version>
+		<Version>1.0.0</Version>
 		<PackageId></PackageId>
-		<PackageCopyright></PackageCopyright>
+		<PackageCopyright>Copyright 2024 © Egor Quenum. All rights reserved.</PackageCopyright>
 		<Title></Title>
 		<Authors>Egor Quenum</Authors>
 		<Description></Description>
 		<PackageTags>template;console;</PackageTags>
-		<PackageProjectUrl></PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/equenum/dotnet_project_templates</PackageProjectUrl>
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>Content</ContentTargetFolders>
