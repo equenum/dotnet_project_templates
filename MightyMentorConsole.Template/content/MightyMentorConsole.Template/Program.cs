@@ -25,10 +25,11 @@ internal class Program
 
     private static void Configure(IHost host) 
     {
-        // https://learn.microsoft.com/en-us/dotnet/api/system.console?view=net-8.0
         // use IHost to integrate appsettings.json configs
+
         Console.Title = "MightyConsole.Template";
-        // Console.BackgroundColor = ConsoleColor.Blue;
-        // Console.ForegroundColor = ConsoleColor.White;
+        // Console.BackgroundColor = ConsoleColor.Black;
+        // Console.ForegroundColor = ConsoleColor.Gray;
+        // Console.SetWindowSize(120, 30);
     }
 }
