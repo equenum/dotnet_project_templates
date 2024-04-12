@@ -33,7 +33,7 @@ internal static class ConsoleHelper
         } 
         catch 
         {
-            value = default(T);
+            value = default;
             return false;
         }
     }

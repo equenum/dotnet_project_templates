@@ -10,7 +10,7 @@ internal static class ColorConsole
     public static void Write(string text, ConsoleColor? color = null) =>
         WriteInternal(text, Console.Write, color);
 
-     public static void WriteSeparationLine(int length = 5, string header = "",
+    public static void WriteSeparationLine(int length = 5, string header = "",
         char separatorChar = '*', ConsoleColor color = ConsoleColor.Gray) 
     {
         var separator = new string(separatorChar, length);
@@ -40,9 +40,9 @@ internal static class ColorConsole
     {
         if (color.HasValue)
         {
-            var previousColor = Console.ForegroundColor;
+            var currentColor = Console.ForegroundColor;
 
-            if (color == previousColor)
+            if (color == currentColor)
             {
                 writeAction(text);
                 return;
@@ -50,7 +50,7 @@ internal static class ColorConsole
                 
             Console.ForegroundColor = color.Value;
             writeAction(text);
-            Console.ForegroundColor = previousColor;
+            Console.ForegroundColor = currentColor;
 
             return;
         }
