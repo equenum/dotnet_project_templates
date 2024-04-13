@@ -5,6 +5,15 @@ namespace MightyMentorConsole.Template.Utilities;
 
 internal static class ConsoleHelper
 {
+    /// <summary>
+    /// Reads user input form the console. 
+    ///     If invalid, prompts to repeat; 
+    ///     if valid, converts to the specified type.
+    /// </summary>
+    /// <typeparam name="T">The expected input value type.</typeparam>
+    /// <param name="prompt">The prompt message written to the console.</param>
+    /// <param name="errorMessage">The error message written to the console.</param>
+    /// <returns>The console input value converted to the specified type.</returns>
     public static T GetInput<T>(string prompt = null, string errorMessage = null)
     {
         ColorConsole.Write(prompt ?? $"Please enter your {typeof(T).Name} value: ");
