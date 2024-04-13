@@ -82,18 +82,14 @@ The template is available in the Nuget.org package source.
 Install via .Net CLI:
 
 ```shell
-dotnet new --install MightyMentorConsole.Template
+dotnet new install MightyMentorConsole.Template
 ```
-
-Install via Visual Studio 2022 GUI: `Placeholder`
 
 ### Uninstall
 
 ```shell
-dotnet new --uninstall MightyMentorConsole.Template
+dotnet new uninstall MightyMentorConsole.Template
 ```
-
-Uninstall via Visual Studio 2022 GUI: `Placeholder`
 
 ### Notes
 
