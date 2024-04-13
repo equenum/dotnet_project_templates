@@ -52,6 +52,9 @@
         {
           "condition": "(!IncludeUtils)",
           "exclude": ["MightyMentorConsole.Template/Utilities/*"]
+        },
+        {
+          "exclude": ["README.md"]
         }
       ]
     }
