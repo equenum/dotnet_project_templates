@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/dotnetcli.host",
+  "symbolInfo": {
+    "IncludeAppsettings": {
+      "longName": "include-appsettings",
+      "shortName": "app"
+    },
+    "IncludeSln": {
+      "longName": "include-sln",
+      "shortName": "sln"
+    },
+    "IncludeUtils": {
+      "longName": "include-utils",
+      "shortName": "utils"
+    }
+  },
+  "usageExamples": [""]
+}

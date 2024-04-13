@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/ide.host",
+  "symbolInfo": [
+    {
+      "id": "IncludeAppsettings",
+      "name": {
+        "text": "Include application settings",
+        "overrideDefaultText": true
+      },
+      "description": {
+        "text": "Includes appsettings.json and appsettings.Development.json.",
+        "overrideDefaultText": true
+      },
+      "isVisible": true,
+      "defaultValue": "true"
+    },
+    {
+      "id": "IncludeSln",
+      "name": {
+        "text": "Include solution",
+        "overrideDefaultText": true
+      },
+      "description": {
+        "text": "Includes a solution file.",
+        "overrideDefaultText": true
+      },
+      "isVisible": true,
+      "defaultValue": "false"
+    },
+    {
+      "id": "IncludeUtils",
+      "name": {
+        "text": "Include project utilities",
+        "overrideDefaultText": true
+      },
+      "description": {
+        "text": "Includes template specific utility classes.",
+        "overrideDefaultText": true
+      },
+      "isVisible": true,
+      "defaultValue": "true"
+    }
+  ]
+}
