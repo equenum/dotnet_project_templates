@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -19,14 +20,15 @@ internal class Program
         Host.CreateDefaultBuilder(args)
             .ConfigureServices((context, services) => 
             {
-                // configure DI services here
                 services.AddTransient<AppRunner>();
             });
 
     private static void Configure(IHost host) 
     {
-        // use IHost to integrate appsettings.json configs
+        // integrate appsettings.json configs, environment variables, etc.
+        var configuration = host.Services.GetService<IConfiguration>();
 
+        // configure the console
         Console.Title = "MightyConsole.Template";
         // Console.BackgroundColor = ConsoleColor.Black;
         // Console.ForegroundColor = ConsoleColor.Gray;
