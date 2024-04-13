@@ -16,15 +16,7 @@
     },
     {
       "id": "IncludeSln",
-      "name": {
-        "text": "Include solution",
-        "overrideDefaultText": true
-      },
-      "description": {
-        "text": "Includes a solution file.",
-        "overrideDefaultText": true
-      },
-      "isVisible": true,
+      "isVisible": false,
       "defaultValue": "false"
     },
     {
