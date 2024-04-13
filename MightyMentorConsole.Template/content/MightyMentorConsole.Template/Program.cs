@@ -29,7 +29,7 @@ internal class Program
         var configuration = host.Services.GetService<IConfiguration>();
 
         // configure the console
-        Console.Title = "MightyConsole.Template";
+        Console.Title = "MightyMentorConsole.Template";
         // Console.BackgroundColor = ConsoleColor.Black;
         // Console.ForegroundColor = ConsoleColor.Gray;
         // Console.SetWindowSize(120, 30);

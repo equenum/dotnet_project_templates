@@ -3,10 +3,11 @@
   "author": "Egor Quenum",
   "classifications": ["Common", "Console"],
   "preferNameDirectory": true,
-  "identity": "",
-  "name": "",
-  "shortName": "",
-  "sourceName": "",
+  "identity": "MightyMentorConsole.Template",
+  "name": "MightyMentor Console App",
+  "shortName": "mentor-console",
+  "sourceName": "MightyMentorConsole.Template",
+  "description": "A simple .Net Console App template tailored for better workshops, live coding sessions, and knowledge-sharing experiences.",
   "tags": {
     "language": "C#",
     "type": "project"
