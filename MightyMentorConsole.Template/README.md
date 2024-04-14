@@ -4,7 +4,7 @@ A simple .Net Console App template tailored for better workshops, live coding se
 
 ### Utilities
 
-#### [ColorConsole](MightyMentorConsole.Template/Utilities/ColorConsole.cs)
+#### [ColorConsole](content/MightyMentorConsole.Template/Utilities/ColorConsole.cs)
 
 Offers a set of methods that allow for writing to console in color for better visibility (wraps around System.Console and implements all the most often used methods).
 
@@ -27,7 +27,7 @@ ColorConsole.WriteSeparationLine(
     color: ConsoleColor.DarkGreen);
 ```
 
-#### [ConsoleHelper](MightyMentorConsole.Template/Utilities/ConsoleHelper.cs)
+#### [ConsoleHelper](content/MightyMentorConsole.Template/Utilities/ConsoleHelper.cs)
 
 Offers a set of methods that allow for simpler and cleaner console input parsing.
 
@@ -41,13 +41,20 @@ var number = ConsoleHelper.GetInput<int>(
 
 ### Parameters
 
+#### Visual Studio:
+
 - **IncludeAppsettings:** Includes `appsettings.json` and `appsettings.Development.json` (defaults to `true`).
-- **IncludeSln:** Includes a solution file (defaults to `false`).
 - **IncludeUtils:** Includes template specific utility classes (defaults to `true`).
+
+#### .Net CLI:
+
+```shell
+dotnet new mentor-console -h
+```
 
 ### Configurations
 
-Dependency Injection:
+#### Dependency Injection:
 
 ```csharp
 private static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -59,7 +66,7 @@ private static IHostBuilder CreateHostBuilder(string[] args) =>
         });
 ```
 
-Console configurations and access to `appsettings.json` via `IConfiguration`:
+#### Console configurations and access to `appsettings.json` via `IConfiguration`:
 
 ```csharp
 private static void Configure(IHost host)
@@ -85,6 +92,19 @@ Install via .Net CLI:
 dotnet new install MightyMentorConsole.Template
 ```
 
+### Usage
+
+#### .Net CLI:
+
+```shell
+dotnet new mentor-console
+```
+
+#### Visual Studio:
+
+- Go to 'Create a new project'.
+- Search for `MightyMentor Console App`.
+
 ### Uninstall
 
 ```shell
@@ -93,5 +113,6 @@ dotnet new uninstall MightyMentorConsole.Template
 
 ### Notes
 
-- The template was written and tested for `Visual Studio 2022` and `.Net8`. It might not work or require adjustments for other configurations.
-- Please open an issue in case of feature suggestions, errors found, or any other form of feedback! Thanks!
+- The template targets `.Net8` and was tested with `Visual Studio 2022` on Windows and `VS Code + C# Dev Kit extensions` on Linux. It might not work or require adjustments for other configurations.
+- When using the template with `Visual Studio 2022` consider ticking the 'Place solution and project in the same directory' checkbox, if you prefer reducing folder nesting. To do the same when using `.Net CLI` specify the output folder parameter as `-o .`.
+- Please reach out or open an issue in case of feature suggestions, errors found, or any other form of feedback! Thanks!
