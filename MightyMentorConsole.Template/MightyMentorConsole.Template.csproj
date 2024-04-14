@@ -16,7 +16,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="content\**" Exclude="content\MightyMentorConsole.Template\bin\**;content\MightyMentorConsole.Template\obj\**" />
-		<None Include="content\README.md" Pack="true" PackagePath="content\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
 		<Compile Remove="**\*" />
 	</ItemGroup>
 </Project>
