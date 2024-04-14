@@ -54,7 +54,7 @@
           "exclude": ["MightyMentorConsole.Template/Utilities/*"]
         },
         {
-          "exclude": ["README.md"]
+          "exclude": ["README.md", ".vs/**"]
         }
       ]
     }

@@ -37,6 +37,9 @@
         {
           "condition": "(!IncludeSln)",
           "exclude": ["MightyConsole.Template.sln"]
+        },
+        {
+          "exclude": [".vs/**"]
         }
       ]
     }
