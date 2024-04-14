@@ -7,7 +7,7 @@
 		<Authors>Egor Quenum</Authors>
 		<Description>A simple .Net Console App template tailored for better workshops, live coding sessions, and knowledge-sharing experiences.</Description>
 		<PackageId>MightyMentorConsole.Template</PackageId>
-		<PackageCopyright>Copyright 2024 © Egor Quenum. All rights reserved.</PackageCopyright>
+		<Copyright>Copyright 2024 © Egor Quenum. All rights reserved.</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>template;console;dotnet-new</PackageTags>
